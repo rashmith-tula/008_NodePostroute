@@ -1,0 +1,16 @@
+
+<h1 style="color: brown; text-decoration: underline"> My Friends List</h1>
+<ul style="color: purple; font-weight: bold; width: 300px; border: 1px dashed pink">
+<% friends.forEach(function(friend) { %>
+  
+    <li> <%= friend.toUpperCase() %> </li>
+
+<% }); %>
+</ul>
+   
+<br/>
+<form action="/addfriend" method="POST" style="width: 300px">
+  <input type="text" name="friend" placeholder="Full Name">  
+  <button>Add Friend</button>
+</form>
+
